@@ -1,0 +1,25 @@
+﻿@model List<Product>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+       
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+            
+            </tr>
+        }
+    </tbody>
+</table>
+
+<input type="text" id="searchBox" placeholder="Search...">
